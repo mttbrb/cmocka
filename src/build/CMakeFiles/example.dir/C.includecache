@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/silly_math.h
+
+/work/c/cmocka/src/example.c
+stdarg.h
+-
+stddef.h
+-
+setjmp.h
+-
+cmocka.h
+-
+silly_math.h
+/work/c/cmocka/src/silly_math.h
+
+/work/c/cmocka/src/silly_math.c
+silly_math.h
+/work/c/cmocka/src/silly_math.h
+
