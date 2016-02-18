@@ -1,1 +1,0 @@
-/usr/bin/cc     CMakeFiles/example.dir/src/example.c.o CMakeFiles/example.dir/src/silly_math.c.o  -o example -rdynamic -lcmocka 
