@@ -1,17 +1,15 @@
-project(SampleCmockaCmakeProject)
+project(NewIpDaemonProject)
 cmake_minimum_required (VERSION 2.6)
-project(example)
+project(newIpDaemon)
 
 include_directories(include)
 
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
 set(SOURCES
-  src/example.c
-  src/example2.c)
+  src/newIpDaemon.c
+   )
 
-add_executable(example ${SOURCES})
+add_executable(newIpDaemon ${SOURCES})
 
-target_link_libraries(example cmocka)
-
-
+target_link_libraries(newIpDaemon cmocka)

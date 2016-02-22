@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/work/c/cmocka/src/example.c" "/work/c/cmocka/build/CMakeFiles/example.dir/src/example.c.o"
-  "/work/c/cmocka/src/silly_math.c" "/work/c/cmocka/build/CMakeFiles/example.dir/src/silly_math.c.o"
+  "/work/c/cmocka/src/newIpDaemon.c" "/work/c/cmocka/build/CMakeFiles/newIpDaemon.dir/src/newIpDaemon.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

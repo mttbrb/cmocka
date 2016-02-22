@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/newIpDaemon.dir/src/newIpDaemon.c.o  -o newIpDaemon -rdynamic -lcmocka 

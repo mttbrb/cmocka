@@ -102,65 +102,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named example
+# Target rules for targets named newIpDaemon
 
 # Build rule for target.
-example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 example
-.PHONY : example
+newIpDaemon: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 newIpDaemon
+.PHONY : newIpDaemon
 
 # fast build rule for target.
-example/fast:
-	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/build
-.PHONY : example/fast
+newIpDaemon/fast:
+	$(MAKE) -f CMakeFiles/newIpDaemon.dir/build.make CMakeFiles/newIpDaemon.dir/build
+.PHONY : newIpDaemon/fast
 
-src/example.o: src/example.c.o
-.PHONY : src/example.o
-
-# target to build an object file
-src/example.c.o:
-	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/src/example.c.o
-.PHONY : src/example.c.o
-
-src/example.i: src/example.c.i
-.PHONY : src/example.i
-
-# target to preprocess a source file
-src/example.c.i:
-	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/src/example.c.i
-.PHONY : src/example.c.i
-
-src/example.s: src/example.c.s
-.PHONY : src/example.s
-
-# target to generate assembly for a file
-src/example.c.s:
-	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/src/example.c.s
-.PHONY : src/example.c.s
-
-src/silly_math.o: src/silly_math.c.o
-.PHONY : src/silly_math.o
+src/newIpDaemon.o: src/newIpDaemon.c.o
+.PHONY : src/newIpDaemon.o
 
 # target to build an object file
-src/silly_math.c.o:
-	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/src/silly_math.c.o
-.PHONY : src/silly_math.c.o
+src/newIpDaemon.c.o:
+	$(MAKE) -f CMakeFiles/newIpDaemon.dir/build.make CMakeFiles/newIpDaemon.dir/src/newIpDaemon.c.o
+.PHONY : src/newIpDaemon.c.o
 
-src/silly_math.i: src/silly_math.c.i
-.PHONY : src/silly_math.i
+src/newIpDaemon.i: src/newIpDaemon.c.i
+.PHONY : src/newIpDaemon.i
 
 # target to preprocess a source file
-src/silly_math.c.i:
-	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/src/silly_math.c.i
-.PHONY : src/silly_math.c.i
+src/newIpDaemon.c.i:
+	$(MAKE) -f CMakeFiles/newIpDaemon.dir/build.make CMakeFiles/newIpDaemon.dir/src/newIpDaemon.c.i
+.PHONY : src/newIpDaemon.c.i
 
-src/silly_math.s: src/silly_math.c.s
-.PHONY : src/silly_math.s
+src/newIpDaemon.s: src/newIpDaemon.c.s
+.PHONY : src/newIpDaemon.s
 
 # target to generate assembly for a file
-src/silly_math.c.s:
-	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/src/silly_math.c.s
-.PHONY : src/silly_math.c.s
+src/newIpDaemon.c.s:
+	$(MAKE) -f CMakeFiles/newIpDaemon.dir/build.make CMakeFiles/newIpDaemon.dir/src/newIpDaemon.c.s
+.PHONY : src/newIpDaemon.c.s
 
 # Help Target
 help:
@@ -170,13 +146,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... example"
-	@echo "... src/example.o"
-	@echo "... src/example.i"
-	@echo "... src/example.s"
-	@echo "... src/silly_math.o"
-	@echo "... src/silly_math.i"
-	@echo "... src/silly_math.s"
+	@echo "... newIpDaemon"
+	@echo "... src/newIpDaemon.o"
+	@echo "... src/newIpDaemon.i"
+	@echo "... src/newIpDaemon.s"
 .PHONY : help
 
 

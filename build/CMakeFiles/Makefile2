@@ -53,38 +53,38 @@ CMAKE_SOURCE_DIR = /work/c/cmocka
 CMAKE_BINARY_DIR = /work/c/cmocka/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/example.dir
+# Target rules for target CMakeFiles/newIpDaemon.dir
 
 # All Build rule for target.
-CMakeFiles/example.dir/all:
-	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/depend
-	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /work/c/cmocka/build/CMakeFiles  1 2
-	@echo "Built target example"
-.PHONY : CMakeFiles/example.dir/all
+CMakeFiles/newIpDaemon.dir/all:
+	$(MAKE) -f CMakeFiles/newIpDaemon.dir/build.make CMakeFiles/newIpDaemon.dir/depend
+	$(MAKE) -f CMakeFiles/newIpDaemon.dir/build.make CMakeFiles/newIpDaemon.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /work/c/cmocka/build/CMakeFiles  1
+	@echo "Built target newIpDaemon"
+.PHONY : CMakeFiles/newIpDaemon.dir/all
 
 # Include target in all.
-all: CMakeFiles/example.dir/all
+all: CMakeFiles/newIpDaemon.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /work/c/cmocka/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/example.dir/all
+CMakeFiles/newIpDaemon.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /work/c/cmocka/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/newIpDaemon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /work/c/cmocka/build/CMakeFiles 0
-.PHONY : CMakeFiles/example.dir/rule
+.PHONY : CMakeFiles/newIpDaemon.dir/rule
 
 # Convenience name for target.
-example: CMakeFiles/example.dir/rule
-.PHONY : example
+newIpDaemon: CMakeFiles/newIpDaemon.dir/rule
+.PHONY : newIpDaemon
 
 # clean rule for target.
-CMakeFiles/example.dir/clean:
-	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/clean
-.PHONY : CMakeFiles/example.dir/clean
+CMakeFiles/newIpDaemon.dir/clean:
+	$(MAKE) -f CMakeFiles/newIpDaemon.dir/build.make CMakeFiles/newIpDaemon.dir/clean
+.PHONY : CMakeFiles/newIpDaemon.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/example.dir/clean
+clean: CMakeFiles/newIpDaemon.dir/clean
 .PHONY : clean
 
 #=============================================================================
