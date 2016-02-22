@@ -1,1 +1,0 @@
-/work/c/cmocka/tests/build/CMakeFiles/example.dir
