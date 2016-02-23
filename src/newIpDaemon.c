@@ -5,6 +5,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+#include <sys/prctl.h>
 
 static pid_t g_child;
 static pid_t g_monitored_child;
@@ -33,6 +34,7 @@ void createChild() {
     fprintf(stderr,"error: failed fork\n");
     exit(EXIT_FAILURE);
   } else if (!g_child) {
+    prctl(PR_SET_NAME,"newIpmon");
     daemonize();
     childProcess();
   }
@@ -42,17 +44,15 @@ void createChild() {
 /* void childProcess() */
 /***********************/
 void childProcess() {
-  int status;
   while(1) {
-    createMonitoredChild();
-    wait(&status);
-    // child died
+    // wait forever for HUP
+    sleep(60 * 60);
   }
 }
 
 /************************/
 /* createMonitoredChild */
-/************************/
+/************************
 void createMonitoredChild() {
   g_monitored_child = fork();
   if (g_monitored_child < 0) {
@@ -61,19 +61,20 @@ void createMonitoredChild() {
   } else if (!g_monitored_child) {
     monitoredChild();
   }
-}
+}*/
 
 /*******************/
 /* monitored_child */
-/*******************/
+/*******************
 void monitoredChild() {
   signal(SIGCHLD, SIG_IGN);
   signal(SIGHUP,  sighupHandler);
+  prctl(PR_SET_NAME,"newip_sender");
   while(1) {
     // wait forever for HUP
     sleep(60 * 60);
   }
-}
+}*/
 
 /*************/
 /* daemonize */
@@ -81,7 +82,7 @@ void monitoredChild() {
 void daemonize() {
 
   signal(SIGCHLD, SIG_IGN);
-  signal(SIGHUP,  SIG_IGN);
+  signal(SIGHUP,  sighupHandler);
 
   umask(0);
   chdir("/");
@@ -98,7 +99,7 @@ void daemonize() {
 /* signalChild */
 /***************/
 void signalChild() {
-  kill(g_monitored_child,SIGHUP);
+  kill(g_child,SIGHUP);
 }
 
 /********/
