@@ -17,4 +17,8 @@ signal.h
 -
 sys/stat.h
 -
+sys/types.h
+-
+sys/wait.h
+-
 
